@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In — World of Warcraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">World of Warcraft</span></a>
+            </div>
+            <div class="account-actions">
+                <a href="login.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-signup">Try Free</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Game</a></li>
+                <li><a href="index.html" class="nav-link">News</a></li>
+                <li><a href="index.html" class="nav-link">Forums</a></li>
+                <li><a href="index.html" class="nav-link">Shop</a></li>
+                <li><a href="index.html" class="nav-link">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="auth-card">
+                <h2>Log In</h2>
+                <p class="auth-desc">Return to Azeroth</p>
+                <form id="login-form" novalidate>
+                    <div class="form-fields">
+                        <div class="form-field">
+                            <label class="form-label" for="login-email">Email</label>
+                            <input class="form-input" type="email" id="login-email" name="login-email" placeholder="Enter your email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Enter a valid email address" required>
+                            <span class="field-error" id="login-email-error"></span>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="login-password">Password</label>
+                            <input class="form-input" type="password" id="login-password" name="login-password" placeholder="Enter your password" minlength="6" required>
+                            <span class="field-error" id="login-password-error"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit">Log In</button>
+                </form>
+                <p class="form-toggle">Don't have an account? <a href="signup.html" class="toggle-link">Try Free</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>World of Warcraft. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

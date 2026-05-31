@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up — World of Warcraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">World of Warcraft</span></a>
+            </div>
+            <div class="account-actions">
+                <a href="login.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-signup">Try Free</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Game</a></li>
+                <li><a href="index.html" class="nav-link">News</a></li>
+                <li><a href="index.html" class="nav-link">Forums</a></li>
+                <li><a href="index.html" class="nav-link">Shop</a></li>
+                <li><a href="index.html" class="nav-link">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="auth-card">
+                <h2>Create Account</h2>
+                <p class="auth-desc">Join the battle for Azeroth!</p>
+                <form id="signup-form" novalidate>
+                    <div class="form-fields">
+                        <div class="form-field">
+                            <label class="form-label" for="signup-username">Username</label>
+                            <input class="form-input" type="text" id="signup-username" name="signup-username" placeholder="Choose a username" pattern="[a-zA-Z0-9_]+" minlength="3" title="At least 3 characters (letters, numbers, underscores)" required>
+                            <span class="field-error" id="signup-username-error"></span>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="signup-email">Email</label>
+                            <input class="form-input" type="email" id="signup-email" name="signup-email" placeholder="Enter your email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Enter a valid email address" required>
+                            <span class="field-error" id="signup-email-error"></span>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="signup-password">Password</label>
+                            <input class="form-input" type="password" id="signup-password" name="signup-password" placeholder="Create a password" minlength="6" required>
+                            <span class="field-error" id="signup-password-error"></span>
+                        </div>
+                        <div class="form-field">
+                            <label class="form-label" for="signup-confirm">Confirm Password</label>
+                            <input class="form-input" type="password" id="signup-confirm" name="signup-confirm" placeholder="Confirm your password" minlength="6" required>
+                            <span class="field-error" id="signup-confirm-error"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit">Sign Up</button>
+                </form>
+                <p class="form-toggle">Already have an account? <a href="login.html" class="toggle-link">Log In</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>World of Warcraft. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

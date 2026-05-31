@@ -243,3 +243,511 @@ p {
 .main-nav .nav-link:hover::after {
     width: 60%;
 }
+
+
+.news {
+    text-align: center;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.news-card {
+    background: var(--wow-bg-panel);
+    border: 1px solid var(--wow-border-gold);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    border-color: var(--wow-gold);
+    box-shadow: 0 0 20px rgba(248, 183, 0, 0.15);
+}
+
+.news-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+}
+
+.news-card p {
+    font-size: 0.9rem;
+    color: var(--wow-text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.news-card p strong {
+    color: var(--wow-text-primary);
+}
+
+.news-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    color: var(--wow-gold-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.news-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 3px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.news-badge.patch {
+    background: rgba(0, 180, 255, 0.15);
+    color: var(--wow-blue);
+    border: 1px solid rgba(0, 180, 255, 0.3);
+}
+
+.news-badge.upcoming {
+    background: rgba(155, 89, 182, 0.15);
+    color: var(--wow-magic);
+    border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.news-badge.hotfix {
+    background: rgba(248, 183, 0, 0.15);
+    color: var(--wow-gold);
+    border: 1px solid rgba(248, 183, 0, 0.3);
+}
+
+.news-link {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    color: var(--wow-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.news-link:hover {
+    color: var(--wow-gold-light);
+}
+
+
+.season-bg {
+    background: linear-gradient(180deg, var(--wow-bg-panel) 0%, var(--wow-bg-dark) 100%);
+    border-top: 2px solid var(--wow-border-gold);
+    border-bottom: 2px solid var(--wow-border-gold);
+    text-align: center;
+}
+
+.season-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--wow-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2.5rem;
+    margin-top: -1rem;
+}
+
+.season-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 0 1.5rem;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .season-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.season-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--wow-border-gold);
+}
+
+.season-info h3,
+.season-raids h3 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    margin-top: 1.25rem;
+}
+
+.season-info h3:first-child,
+.season-raids h3:first-child {
+    margin-top: 0;
+}
+
+.season-info p,
+.season-raids p {
+    font-size: 0.9rem;
+    color: var(--wow-text-secondary);
+    line-height: 1.7;
+}
+
+.season-raids ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.season-raids ul li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: var(--wow-text-secondary);
+    padding: 0.4rem 0 0.4rem 1.25rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.season-raids ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--wow-gold-dark);
+}
+
+.season-raids ul li strong {
+    color: var(--wow-text-primary);
+}
+
+
+.features {
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.feature-card {
+    background: var(--wow-bg-panel);
+    border: 1px solid var(--wow-border-gold);
+    border-radius: 8px;
+    padding: 2rem 3rem;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--wow-gold);
+    transition: all 0.3s ease;
+    min-width: 160px;
+}
+
+.feature-card:hover {
+    background: rgba(248, 183, 0, 0.1);
+    box-shadow: 0 0 20px rgba(248, 183, 0, 0.4);
+    border-color: var(--wow-gold);
+}
+
+.features-soon {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--wow-text-secondary);
+    margin-top: 2rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid var(--wow-border-gold);
+    background: var(--wow-bg-panel);
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    color: var(--wow-text-secondary);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* hero Section */
+.hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 0.85) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--wow-gold) 0%, var(--wow-gold-dark) 100%);
+    color: var(--wow-bg-dark);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(248, 183, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9), 0 0 30px rgba(248, 183, 0, 0.2);
+    letter-spacing: 4px;
+}
+
+.hero-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: var(--wow-gold-light);
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--wow-text-secondary);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.btn-primary {
+    padding: 1rem 3rem;
+    background: linear-gradient(135deg, var(--wow-gold) 0%, var(--wow-gold-dark) 100%);
+    color: var(--wow-bg-dark);
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    border: 2px solid var(--wow-gold);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(248, 183, 0, 0.4);
+    background: linear-gradient(135deg, var(--wow-gold-light) 0%, var(--wow-gold) 100%);
+}
+
+.btn-secondary {
+    padding: 1rem 3rem;
+    background: transparent;
+    color: var(--wow-gold);
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    border: 2px solid var(--wow-border-gold);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background: rgba(248, 183, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(248, 183, 0, 0.2);
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--wow-gold);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.stat-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: var(--wow-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Auth Pages */
+.auth-section {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    background: 
+        radial-gradient(circle at 50% 50%, rgba(248, 183, 0, 0.05) 0%, transparent 70%),
+        linear-gradient(180deg, var(--wow-bg-panel) 0%, var(--wow-bg-dark) 100%);
+}
+
+.auth-card {
+    background: linear-gradient(180deg, var(--wow-bg-panel) 0%, var(--wow-bg-dark) 100%);
+    border: 2px solid var(--wow-border-gold);
+    border-radius: 8px;
+    width: 420px;
+    max-width: 94vw;
+    padding: 2.5rem 2rem 2rem;
+    box-shadow: 0 0 40px rgba(248, 183, 0, 0.15), 0 20px 60px rgba(0, 0, 0, 0.8);
+}
+
+.auth-card h2 {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 0.75rem;
+}
+
+.auth-desc {
+    text-align: center;
+    color: var(--wow-text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    margin-top: -0.5rem;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--wow-text-secondary);
+}
+
+.form-input {
+    padding: 0.7rem 0.9rem;
+    border-radius: 4px;
+    border: 1px solid var(--wow-border);
+    background: var(--wow-bg-panel-light);
+    color: var(--wow-text-primary);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+    border-color: var(--wow-gold-dark);
+    box-shadow: 0 0 8px rgba(248, 183, 0, 0.15);
+}
+
+.form-input.valid {
+    border-color: var(--wow-success);
+}
+
+.form-input.invalid {
+    border-color: var(--wow-danger);
+    box-shadow: 0 0 8px rgba(255, 64, 64, 0.2);
+}
+
+.field-error {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.78rem;
+    color: var(--wow-danger);
+    display: none;
+    min-height: 1.1em;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    transform: none;
+    box-shadow: 0 4px 20px rgba(248, 183, 0, 0.35);
+}
+
+.form-toggle {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: var(--wow-text-secondary);
+}
+
+.toggle-link {
+    color: var(--wow-gold);
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.toggle-link:hover {
+    color: var(--wow-gold-light);
+    text-decoration: underline;
+}
