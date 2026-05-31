@@ -45,4 +45,17 @@ You have two total days (including weekends and holidays) to work on this assess
 - [X] Level of effort displayed in creativity, presentation, and user experience. (5%)
 
 ## 🔗 References
+- https://www.designyourway.net/blog/world-of-warcraft-logo/
+
+- https://www.designyourway.net/blog/warcraft-fonts/
+
+- https://texteffects.dev/posts/gold-text-effect
+
+- https://codingartistweb.com/2020/01/gold-text-effect-css-text-effect/
+
+- https://codeconvey.com/animated-gold-css/
+
+- https://unsimpleworld.com/portfolio/website-world-of-warcraft-transcend-wow/
+
+
 

@@ -126,7 +126,120 @@ p {
     color: #ff6b6b;
 }
 
-header {
-    background: #1a1a1a;
-    padding: 1rem 0;
+/* Header and Navigation */
+.main-header {
+    background: linear-gradient(180deg, var(--wow-bg-dark) 0%, var(--wow-bg-panel) 100%);
+    border-bottom: 2px solid var(--wow-border-gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-text {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--wow-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(248, 183, 0, 0.5);
+}
+
+.account-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-login, .btn-signup {
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-login {
+    color: var(--wow-gold);
+    border: 1px solid var(--wow-border-gold);
+    background: transparent;
+}
+
+.btn-login:hover {
+    background: rgba(248, 183, 0, 0.1);
+    box-shadow: 0 0 15px rgba(248, 183, 0, 0.3);
+}
+
+.btn-signup {
+    color: var(--wow-bg-dark);
+    background: linear-gradient(135deg, var(--wow-gold) 0%, var(--wow-gold-dark) 100%);
+    border: none;
+}
+
+.btn-signup:hover {
+    background: linear-gradient(135deg, var(--wow-gold-light) 0%, var(--wow-gold) 100%);
+    box-shadow: 0 0 20px rgba(248, 183, 0, 0.4);
+}
+
+.main-nav {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 0;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-nav .nav-link {
+    font-family: 'Cinzel', serif;
+    color: var(--wow-text-primary);
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.main-nav .nav-link:hover {
+    color: var(--wow-gold);
+    background: rgba(248, 183, 0, 0.05);
+}
+
+.main-nav .nav-link.active {
+    color: var(--wow-gold);
+    border-bottom-color: var(--wow-gold);
+}
+
+.main-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--wow-gold);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.main-nav .nav-link:hover::after {
+    width: 60%;
 }
