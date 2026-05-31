@@ -1,15 +1,51 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --wow-gold: #f8b700;
+    --wow-gold-light: #ffd700;
+    --wow-gold-dark: #c48a00;
+    --wow-blue: #00b4ff;
+    --wow-blue-dark: #0077b3;
+    --wow-alliance: #1c3f6e;
+    --wow-horde: #8c1616;
+    --wow-bg-dark: #0a0a0a;
+    --wow-bg-panel: #15171e;
+    --wow-bg-panel-light: #1e2129;
+    --wow-text-primary: #c9b6a0;
+    --wow-text-secondary: #8b7355;
+    --wow-border: #3d3425;
+    --wow-border-gold: #5c4a1f;
+    --wow-danger: #ff4040;
+    --wow-success: #40ff40;
+    --wow-magic: #9b59b6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', 'Georgia', serif;
     line-height: 1.6;
-    color: #c9b6a0;
-    background-color: #0a0a0a;
+    color: var(--wow-text-primary);
+    background-color: var(--wow-bg-dark);
     min-height: 100vh;
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(248, 183, 0, 0.05) 0%, transparent 50%),
+        linear-gradient(180deg, rgba(10, 10, 10, 0.9) 0%, rgba(21, 23, 30, 0.95) 100%);
 }
 
 img {
@@ -34,31 +70,63 @@ button {
     font-family: inherit;
 }
 
-/* Base container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
-/* Section base styles */
 section {
     padding: 4rem 0;
 }
 
-/* Typography base */
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
+    color: var(--wow-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 20px rgba(248, 183, 0, 0.3);
+}
+
+h2 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--wow-border-gold);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--wow-text-primary);
 }
 
 p {
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 1rem;
+    color: var(--wow-text-primary);
 }
 
-/* Temporary layout styles - will be refined */
- header {
+.text-gold {
+    color: var(--wow-gold);
+}
+
+.text-alliance {
+    color: #4a90e2;
+}
+
+.text-horde {
+    color: #ff6b6b;
+}
+
+header {
     background: #1a1a1a;
     padding: 1rem 0;
- }
+}
